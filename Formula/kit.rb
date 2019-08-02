@@ -5,7 +5,6 @@ class Kit < Formula
   sha256 "c19dcdcbd4961a3758443bcacffb6dd5e1c3900ee7084c58ce2a45694890bd2a"
 
   depends_on "openssl"
-  depends_on "crystal" => :install
 
   def install
     mv "kit-darwin-amd64", "kit"
