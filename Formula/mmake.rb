@@ -4,9 +4,9 @@ class Mmake < Formula
   homepage "https://#{GIT}"
   url "https://#{GIT}.git",
       :branch      => "master",
-      :revision => "b271a72fab54ea47913eb9b848362736156599dc"
+      :revision => "0c5ad3c7e6cbeead537babb33e3ddb2cdb8a2be3"
   head "https://#{GIT}.git"
-  version "1.4.0"
+  version "1.4.1"
 
   depends_on "go"
 
