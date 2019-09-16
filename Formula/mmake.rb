@@ -2,28 +2,18 @@
 class Mmake < Formula
   desc "Go wrapper for forked version of TJ Holowaychuk's Mmake"
   homepage "https://github.com/zph/mmake"
-  version "1.4.3"
+  version "1.4.4"
 
   if OS.mac?
-    url "http://github.mycompany.com/foo/bar/releases/v1.4.3/mmake_1.4.3_darwin_x86_64.tar.gz"
-    sha256 "839cae6db81016352a9d566a721f7ad8fb969b68d9d04ee0fbeea22536188826"
+    url "http://github.mycompany.com/foo/bar/releases/v1.4.4/mmake_1.4.4_darwin_x86_64.tar.gz"
+    sha256 "38c46c1ca5dc2d45c00749ca6a61d7f6581fe75d652f913433f43eb2316e0c20"
   elsif OS.linux?
-    url "http://github.mycompany.com/foo/bar/releases/v1.4.3/mmake_1.4.3_linux_x86_64.tar.gz"
-    sha256 "66bf61a6bd2aa9ddf2faff413b00d5baacf161a5b62cff363c2b5843ff6659de"
+    url "http://github.mycompany.com/foo/bar/releases/v1.4.4/mmake_1.4.4_linux_x86_64.tar.gz"
+    sha256 "20884053c3ef672beba871263a0b07d5a6b4e402d0495d9d450a19fc9e0a04ec"
   end
-  
-  head "https://github.com/zph/mmake.git"
-  
-  depends_on "go"
 
   def install
-    GIT = "github.com/zph/mmake"
-    ENV["GOPATH"] = buildpath
-    (buildpath/"src/#{GIT}").install buildpath.children
-    cd "src/#{GIT}" do
-      system "make build"
-      bin.install "dist/mmake" => "mmake"
-    end
+    bin.install "mmake"
   end
 
   test do
