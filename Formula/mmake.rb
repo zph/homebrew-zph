@@ -2,14 +2,14 @@
 class Mmake < Formula
   desc "Go wrapper for forked version of TJ Holowaychuk's Mmake"
   homepage "https://github.com/zph/mmake"
-  version "1.4.6"
+  version "1.4.7"
 
   if OS.mac?
-    url "https://github.com/zph/mmake/releases/download/v1.4.6/mmake_1.4.6_darwin_x86_64.tar.gz"
-    sha256 "2aa70290f19ab5fefaf85c955303360228d29fd06840edb90e6403a21957ac7e"
+    url "https://github.com/zph/mmake/releases/download/v1.4.7/mmake_1.4.7_darwin_x86_64.tar.gz"
+    sha256 "b1c09e73f2ff8e5d6731748a95e3fa7bb67eb501eaad057b553503b653f1ddaf"
   elsif OS.linux?
-    url "https://github.com/zph/mmake/releases/download/v1.4.6/mmake_1.4.6_linux_x86_64.tar.gz"
-    sha256 "7f037fc0e8ba262c6c970952bc17528fbdfb1d86d47412ed08f36e4a5d1bd14c"
+    url "https://github.com/zph/mmake/releases/download/v1.4.7/mmake_1.4.7_linux_x86_64.tar.gz"
+    sha256 "c76e28f16d3c6767282a53bb43bbe66fc7b4bfe26d7b4409a381de8b4689fa56"
   end
 
   def install
