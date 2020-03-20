@@ -1,9 +1,9 @@
 class AdrTools < Formula
   desc "CLI tool for working with Architecture Decision Records"
   homepage "https://github.com/npryce/adr-tools"
-  version "3.0.1"
+  version "3.0.2"
   stable do
-    url "https://github.com/zph/adr-tools.git", tag: "3.0.1"
+    url "https://github.com/zph/adr-tools.git", tag: "3.0.2"
   end
 
   bottle :unneeded
