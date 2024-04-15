@@ -4,7 +4,7 @@ class Pather < Formula
   homepage "https://github.com/zph/pather"
   url "https://github.com/zph/pather.git", revision: VERSION
   version VERSION
-  sha256 "6930f431b163a2404c8bf99d0bede57229a18109e06aa8d96198738fdf2f33da"
+  sha256 "2682751435097f73a4763a6220d9e5334732795b"
   license "MIT"
 
   depends_on "nim" => :build
